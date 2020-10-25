@@ -1,0 +1,549 @@
+@charset "utf-8";
+/*乃木坂46 公式ブログ*/
+
+/**/
+*{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+body,table,form{font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;line-height:1.5;}
+li{list-style:none;}
+th,td{text-align:left;vertical-align:top;}
+embed,object{outline:none;}
+.clearfix:after{
+	content:".";
+	display:block;height:0;clear:both;visibility:hidden;
+	}
+.clearfix{display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+/* End hide from IE-mac */
+
+.alt,hr,#copyright{
+	visibility:hidden;position:absolute;top:-5000px;left:-5000px;width:1px;display:none;
+	/*\*/
+	display:block;
+	/**/
+	}
+
+/*
+	紫：7e1083
+	ピンク：e2437a
+	薄紫：bf87c1
+*/
+
+/*base*/
+body{text-align:center;background:#7e1083;color:#fff;}
+a{text-decoration:underline;outline:none;color:#fff;}
+#container{
+	background:#7e1083 url(pattern.jpg)/*tpa=https://img.nogizaka46.com/blog/img/pattern.jpg*/ center 0 repeat;
+	color:#333;padding:0 0 30px;
+	}
+#container a{color:#7e1083;}
+#container a:hover{color:#e2437a;}
+a:hover{text-decoration:none;}
+a img{border:0;}
+
+/*共通*/
+.w980{
+	text-align:left;
+	width:980px;margin:0 auto;
+	}
+#head{
+	background:#fff url(headbg.gif)/*tpa=https://img.nogizaka46.com/blog/img/headbg.gif*/ 0 bottom no-repeat;
+	padding:10px 15px 14px;
+	margin-bottom:9px;
+	}
+#logo{
+	text-indent:-5000px;
+	background:url(logo.gif)/*tpa=https://img.nogizaka46.com/blog/img/logo.gif*/ 0 0 no-repeat;
+	width:280px;height:84px;
+	}
+	#logo a{display:block;width:280px;height:84px;}
+#head ul{height:46px;background:#742581;margin-bottom:7px;}
+#head ul li{
+	float:left;width:105px;height:46px;text-align:center;
+	}
+
+
+	#head ul li.m9{width:110px;}
+	
+	#head ul li.m1{position:relative;z-index:40;text-align:left;}
+	#head ul li.m1 #ddmenu1 {display:none;width:105px;height:auto;padding:5px 0 0 0;position:absolute;left:0px;top:41px;background:url("menu_dd.png")/*tpa=http://blog.nogizaka46.com/img/menu_dd.png*/ 0px -27px no-repeat;z-index:3;}
+	#head ul li.m1 #ddmenu1 li {display:block;width:105px;height:27px;padding:0;margin:0;background-image:none;background-color:none;}
+	#head ul li.m1 #ddmenu1 li a {display:block;width:105px;height:27px;padding:0;margin:0;background-image:none;background-color:none;}
+	#head ul li.m1 #ddmenu1 li a:hover {background-image:url("menu_dd.png")/*tpa=http://blog.nogizaka46.com/img/menu_dd.png*/; background-position:0px 0px; }
+	
+	#head ul li.m5{position:relative;z-index:40;text-align:left;}
+	#head ul li.m5 #ddmenu5 {display:none;width:105px;height:auto;padding:5px 0 0 0;position:absolute;left:0px;top:41px;background:url("menu_dd.png")/*tpa=http://blog.nogizaka46.com/img/menu_dd.png*/ -105px -27px no-repeat;z-index:3;}
+	#head ul li.m5 #ddmenu5 li {display:block;width:105px;height:27px;padding:0;margin:0;background-image:none;background-image:none;}
+	#head ul li.m5 #ddmenu5 li a {display:block;width:105px;height:27px;padding:0;margin:0;background-image:none;background-image:none;}
+	#head ul li.m5 #ddmenu5 li a:hover {background-image:url("menu_dd.png")/*tpa=http://blog.nogizaka46.com/img/menu_dd.png*/; background-position:0px 0px;}
+	
+	#head ul li.m8{position:relative;z-index:40;text-align:left;}
+	#head ul li.m8 #ddmenu8 {display:none;width:105px;height:auto;padding:5px 0 0 0;position:absolute;left:0px;top:41px;background:url("menu_dd.png")/*tpa=http://blog.nogizaka46.com/img/menu_dd.png*/ -210px -27px no-repeat;z-index:3;}
+	#head ul li.m8 #ddmenu8 li {display:block;width:105px;height:27px;padding:0;margin:0;background-image:none;background-image:none;}
+	#head ul li.m8 #ddmenu8 li a {display:block;width:105px;height:27px;padding:0;margin:0;background-image:none;background-image:none;}
+	#head ul li.m8 #ddmenu8 li a:hover {background-image:url("menu_dd.png")/*tpa=http://blog.nogizaka46.com/img/menu_dd.png*/; background-position:0px 0px;}
+	
+	#head ul li.m9{position:relative;z-index:40;text-align:left;}
+	#head ul li.m9 #ddmenu9 {display:none;width:105px;height:auto;padding:5px 0 0 0;position:absolute;left:0px;top:41px;background:url("menu_dd.png")/*tpa=http://blog.nogizaka46.com/img/menu_dd.png*/ -315px -27px no-repeat;z-index:3;}
+	#head ul li.m9 #ddmenu9 li {display:block;width:105px;height:27px;padding:0;margin:0;background-image:none;background-image:none;}
+	#head ul li.m9 #ddmenu9 li a {display:block;width:105px;height:27px;padding:0;margin:0;background-image:none;background-image:none;}
+	#head ul li.m9 #ddmenu9 li a:hover {background-image:url("menu_dd.png")/*tpa=http://blog.nogizaka46.com/img/menu_dd.png*/; background-position:0px 0px;}
+
+
+
+#head ul a{
+	text-indent:-5000px;
+	display:block;color:#fff;width:105px;height:46px;
+	background:url(menu.gif)/*tpa=http://blog.nogizaka46.com/img/menu.gif*/ 0 0 no-repeat;
+	}
+
+
+	#head ul li.m1 a{background-position:0 0;}
+
+
+/* 2015.11.11.追加・変更 */
+	#head ul li.m10 a{background-position:-105px 0;}
+	#head ul li.m2 a{background-position:-210px 0;}
+	#head ul li.m3 a{background-position:-315px 0;}
+	#head ul li.m4 a{background-position:-420px 0;}
+/* /2015.11.11.追加・変更 */
+
+
+/*
+
+	#head ul li.m2 a{background-position:-105px 0;}
+	#head ul li.m3 a{background-position:-210px 0;}
+	#head ul li.m4 a{background-position:-315px 0;}
+
+*/
+
+	#head ul li.m5 a{background-position:-420px 0;}
+	#head ul li.m6 a{background-position:-525px 0;}
+	#head ul li.m7 a{background-position:-630px 0;}
+	#head ul li.m8 a{background-position:-735px 0;}
+	#head ul li.m9 a{background-position:-840px 0;width:110px;}
+	#head ul li.m1 a:hover{background-position:0 -46px;}
+
+
+/* 2015.11.11.追加・変更 */
+	#head ul li.m10 a:hover{background-position:-105px -46px;}
+	#head ul li.m2 a:hover{background-position:-210px -46px;}
+	#head ul li.m3 a:hover{background-position:-315px -46px;}
+	#head ul li.m4 a:hover{background-position:-420px -46px;}
+/* /2015.11.11.追加・変更 */
+
+/*
+	#head ul li.m2 a:hover{background-position:-105px -46px;}
+	#head ul li.m3 a:hover{background-position:-210px -46px;}
+	#head ul li.m4 a:hover{background-position:-315px -46px;}
+*/
+
+
+	#head ul li.m5 a:hover{background-position:-420px -46px;}
+	#head ul li.m6 a:hover{background-position:-525px -46px;}
+	#head ul li.m7 a:hover{background-position:-630px -46px;}
+	#head ul li.m8 a:hover{background-position:-735px -46px;}
+	#head ul li.m9 a:hover{background-position:-840px -46px;}
+	#news #head ul li.m1 a{background-position:0 -92px;}
+
+/* 2015.11.11.追加・変更 */
+	#schedule #head ul li.m10 a{background-position:-105px -92px;}
+	#member #head ul li.m2 a{background-position:-210px -92px;}
+	#discography #head ul li.m3 a{background-position:-315px -92px;}
+	#event #head ul li.m4 a{background-position:-420px -92px;}
+/* /2015.11.11.追加・変更 */
+
+/*
+	#member #head ul li.m2 a{background-position:-105px -92px;}
+	#discography #head ul li.m3 a{background-position:-210px -92px;}
+	#event #head ul li.m4 a{background-position:-315px -92px;}
+
+
+*/
+	#tv #head ul li.m5 a,#doko #head ul li.m5 a{background-position:-420px -92px;}
+	#photo #head ul li.m6 a{background-position:-525px -92px;}
+	#video #head ul li.m7 a{background-position:-630px -92px;}
+
+	#staffblog #head ul li.m8 a,#blogs #head ul li.m8 a,#blog #head ul li.m8 a{background-position:-735px -92px;}
+#head .bnr{position:relative;}
+#head .bnr a{
+	display:block;
+	width:510px;height:65px;
+	position:absolute;
+	left:439px;top:-125px;
+	}
+.left1{width:760px;float:left;}
+.right1{width:202px;float:right;}
+.right2{width:455px;float:right;}
+.right2in{width:437px;padding:15px 0;overflow:hidden;}
+.left2{width:291px;float:left;padding:15px 0;}
+#blogbody{
+	background:#fff url(member_title.gif)/*tpa=https://img.nogizaka46.com/blog/img/member_title.gif*/ 0 0 repeat-x;
+	}
+#blogs #blogbody{background-image:url(member_title2.gif)/*tpa=https://img.nogizaka46.com/blog/img/member_title2.gif*/;}
+#staffblog #blogbody{background-image:url(member_title3.gif)/*tpa=https://img.nogizaka46.com/blog/img/member_title3.gif*/;}
+#bbin{
+	background:url(right1bg.gif)/*tpa=https://img.nogizaka46.com/blog/img/right1bg.gif*/ right 0 repeat-y;min-height:200px;
+	padding-left:15px;
+	}
+#blogmaintitle{height:60px;color:#fff;line-height:1;padding-left:8px;}
+#blogmaintitle div{font-size:30px;font-family:futura,arial;padding-top:15px;}
+#blogmaintitle div span{font-size:20px;}
+#blogmaintitle a{color:#fff;}
+#blogmaintitle a:hover{color:#f5d2de;}
+#staffblog #blogmaintitle a:hover{color:#d4e9f7;}
+
+#footer{
+	text-align:left;
+	width:980px;margin:0 auto 30px;
+	background:url(copyright.gif)/*tpa=https://img.nogizaka46.com/blog/img/copyright.gif*/ right 20px no-repeat;
+	}
+#footer ul{padding:20px 0;}
+#footer li{float:left;height:30px;}
+#footer li a{
+	display:block;height:30px;text-indent:-5000px;
+	background:url(footer.gif)/*tpa=https://img.nogizaka46.com/blog/img/footer.gif*/ 0 0 no-repeat;
+	}
+	#footer li a:hover{filter:alpha(opacity=70);opacity:0.7;}
+#footer .m1{width:125px;}
+	#footer .m1 a{background-position:0 0;}
+#footer .m2{width:110px;}
+	#footer .m2 a{background-position:-125px 0;}
+#footer .m3{width:63px;}
+	#footer .m3 a{background-position:-235px 0;}
+#footer .m4{width:100px;}
+	#footer .m4 a{background-position:-300px 0;}
+#snslinks{position:relative;}
+#snslinks a{
+	text-indent:-5000px;
+	display:block;position:absolute;width:158px;height:30px;
+	}
+	#snslinks a:hover{filter:alpha(opacity=90);opacity:0.9;}
+#snslinks .s1 a{top:20px;left:518px;background:url(btn_twitter.gif)/*tpa=https://img.nogizaka46.com/blog/img/btn_twitter.gif*/ 0 0 no-repeat;}
+#snslinks .s2 a{top:20px;left:680px;background:url(btn_facebook.gif)/*tpa=https://img.nogizaka46.com/blog/img/btn_facebook.gif*/ 0 0 no-repeat;}
+.ptop{width:100%;height:1px;position:relative;}
+.ptop a{
+	text-indent:-5000px;font-size:1%;
+	display:block;
+	position:absolute;right:0;top:-20px;
+	width:116px;height:20px;
+	background:url(ptop.gif)/*tpa=https://img.nogizaka46.com/blog/img/ptop.gif*/ 0 0 no-repeat;
+	}
+.ptop a:hover{
+	background-position:0 -20px;
+	}
+
+
+#snsbtns{position:relative;}
+
+.snsbtn{position:absolute;}
+#snsbtns #snssheet{right:4px;width:390px;height:30px;background:white;top:-27px;}
+#snsbtns #s1{right:335px;height:20px;overflow:hidden;top:-20px;}
+#snsbtns #s2{right:280px;top:-20px;}
+#snsbtns #s3{right:212px;top:-19px;}
+#snsbtns #s4{right:130px;top:-19px;}
+#snsbtns #s5{right:-10px;width:135px;overflow:hidden;top:-20px;}
+
+/*角R*/
+.ptop a,#snsbtns #snssheet{
+	-moz-border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+	}
+#daytable{
+	-moz-border-radius: 0px 0px 5px 5px / 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px / 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px / 0px 0px 5px 5px;
+	}
+#blogroot a,#blogs #siderecententry{
+	-moz-border-radius: 0 6px 0px 0px / 0 6px 0px 0px;
+	-webkit-border-radius: 0 6px 0px 0px / 0 6px 0px 0px;
+	border-radius: 0 6px 0px 0px / 0 6px 0px 0px;
+	}
+#blogbody,#bbin,#bnrs div,#bnrs a img,#siderecententry ul,
+#sideprofile,#sidecalendar,#sheet h1,#trackbacks{
+	-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;
+	}
+#calendarPN a,#rss a{
+	-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;
+	}
+#rss a{
+	box-shadow: 1px 1px 2px 0px #c08a9a;
+	}
+
+/*両サイド*/
+#siderecententry h2,
+#sidearchives h2,
+#sidemember h2,
+#sidelinks h2{
+	color:#fff;font-family:futura,arial;
+	font-size:18px;font-weight:normal;
+	line-height:1.1;margin-bottom:3px;
+	}
+#siderecententry h2 .name,
+#sidearchives h2 .name{
+	font-size:10px;display:block;
+	}
+#siderecententry{
+	background:#f0a3be;
+	padding:12px 12px;
+	}
+#blogs #siderecententry{background:#c18ac2;}
+#staffblog #siderecententry{background:#95caec;}
+#siderecententry ul{
+	background:#fff;color:#333;
+	padding:7px 10px 2px;
+	}
+#siderecententry li{
+	background:url(li2.gif)/*tpa=https://img.nogizaka46.com/blog/img/li2.gif*/ 0 7px no-repeat;
+	padding:3px 0 2px 11px;
+	border-bottom:dashed 1px #bf87c1;
+	}
+#staffblog #siderecententry li{
+	background:url(li3.gif)/*tpa=https://img.nogizaka46.com/blog/img/li3.gif*/ 0 7px no-repeat;
+	}
+#siderecententry li.last{
+	background:none !important;text-align:right;border-width:0;font-family:futura,arial;
+	}
+#siderecententry li a{
+	text-decoration:none;line-height:1.2;
+	color:#e2437a;
+	}
+#siderecententry li a .post{display:block;font-size:85%;color:#888;}
+#siderecententry li a .name{color:#e2437a;}
+#siderecententry li a:hover{color:#7e1083 !important;}
+#siderecententry li.last a{color:#f4bbcf;}
+#siderecententry li.last a:hover{color:#e2437a !important;}
+#blogs #siderecententry li a{color:#7e1083;}
+#blogs #siderecententry li a:hover{color:#e2437a;}
+#blogs #siderecententry li.last a{color:#bf87c1;}
+#blogs #siderecententry li.last a:hover{color:#7e1083 !important;}
+#staffblog #siderecententry li a{color:#4389c4;}
+#staffblog #siderecententry li a:hover{color:#95caec;}
+#staffblog #siderecententry li.last a{color:#b1d8f1;}
+#staffblog #siderecententry li.last a:hover{color:#4389c4 !important;}
+
+#sidearchives{
+	background:#f4bbcf;
+	padding:12px 12px;
+	}
+#blogs #sidearchives{background:#d1a9d2;}
+#staffblog #sidearchives{background:#b1d8f1;}
+#sidearchives select{
+	width:100%;
+	}
+#sidemember{
+	padding:8px 0 28px 6px;
+	}
+#sidemember h2{padding-left:6px;margin-bottom:4px;}
+#sidemember .unit{width:64px;height:98px;float:left;font-size:85%;text-align:center;}
+#sidemember .unit2{padding:20px 0;}
+#sidemember a{display:block;line-height:1;margin-bottom:10px;}
+#sidemember a span{display:block;}
+#sidemember .unit a img{
+	display:block;width:60px;height:72px;
+	border:solid 1px #ccc;margin-bottom:3px;
+	background:url(splite60x72.jpg-v20140709.jpg)/*tpa=https://img.nogizaka46.com/blog/pic/splite60x72.jpg?v20140709*/ 0 0 no-repeat;
+	}
+#sidemember .unit.three-mem a img{
+	display:block;width:60px;height:72px;
+	border:solid 1px #ccc;margin-bottom:3px;
+	background:url(splite60x72-3ki.jpg)/*tpa=https://img.nogizaka46.com/blog/pic/splite60x72-3ki.jpg*/ 0 0 no-repeat;
+	}
+#sidemember a .sub{display:none;}
+#sideprofile{
+	border:solid 2px #ead7ed;
+	padding:8px;margin-bottom:8px;
+	}
+#sideprofile .pic{float:left;width:135px;}
+#sideprofile .txt{float:left;width:130px;padding-top:10px;}
+#blogs #sideprofile .pic{width:160px;}
+#blogs #sideprofile .txt{width:110px;}
+#sideprofile h2{color:#7e1083;font-size:60%;font-family:futura,arial;font-weight:normal;}
+#sideprofile h3{color:#7e1083;font-size:140%;margin-bottom:5px;}
+#sideprofile a{color:#e2437a;}
+#sidecalendar{border:solid 2px #f5d2de;margin-bottom:8px;padding:8px 0 0;min-height:120px;}
+#blogs #sidecalendar{border-color:#ead7ed;}
+#staffblog #sidecalendar{border-color:#d4e9f7;}
+#sidecalendar h2{
+	text-align:center;font-family:futura,arial;
+	font-weight:normal;color:#e2437a;
+	line-height:1;padding-bottom:5px;
+	}
+#blogs #sidecalendar h2{color:#7e1083;}
+#staffblog #sidecalendar h2{color:#4389c4;}
+#sidecalendar h2 .year{float:left;width:125px;text-align:right;padding-top:20px;}
+#sidecalendar h2 .month{float:left;width:100px;padding-left:3px;text-align:left;font-size:300%;}
+#calendarPN{position:relative;height:1px;}
+#calendarPN a{
+	text-indent:-5000px;position:absolute;
+	display:block;width:25px;height:25px;
+	border:solid 1px #fff;
+	}
+#calendarPN a:hover{border:solid 1px #ccc;}
+#calendarPN a.prev{
+	left:10px;top:-30px;
+	background:url(calendar_prev.gif)/*tpa=https://img.nogizaka46.com/blog/img/calendar_prev.gif*/ 0 0 no-repeat;
+	}
+#calendarPN a.next{
+	right:10px;top:-30px;
+	background:url(calendar_next.gif)/*tpa=https://img.nogizaka46.com/blog/img/calendar_next.gif*/ 0 0 no-repeat;
+	}
+#daytable{
+	background:#ec658e url(daytablebg2.gif)/*tpa=https://img.nogizaka46.com/blog/img/daytablebg2.gif*/ 0 0 repeat;
+	color:#fff;padding:10px 20px;
+	}
+#blogs #daytable{
+	background:#7e1083 url(daytablebg.gif)/*tpa=https://img.nogizaka46.com/blog/img/daytablebg.gif*/ 0 0 repeat;
+	}
+#staffblog #daytable{
+	background:#4f9bcc url(daytablebg3.gif)/*tpa=https://img.nogizaka46.com/blog/img/daytablebg3.gif*/ 0 0 repeat;
+	}
+#daytable table{width:100%;}
+#daytable th,#daytable td{text-align:center;font-family:futura,arial;color:#fff:}
+#daytable th{font-weight:normal;font-size:85%;}
+#daytable th.sun{color:#f5d2de;}
+#blogs #daytable th.sun{color:#ff8383;}
+#daytable td{color:#f0c9d9;font-size:110%;}
+#blogs #daytable td{color:#bf87c1;}
+#staffblog #daytable td{color:#d4e9f7;}
+#daytable td a{color:#fff;display:block;}
+#daytable td a:hover{color:#ffbdd4;}
+#sidelinks{margin-bottom:8px;padding:10px 8px 15px;}
+#sidelinks h2{color:#7e1083;padding-bottom:5px;}
+#sidelinks li{
+	background:url(li.gif)/*tpa=https://img.nogizaka46.com/blog/img/li.gif*/ 0 4px no-repeat;
+	padding:0 0 5px 11px;
+	}
+
+/*バナー*/
+#bnrs a{display:block;}
+#bnrs a img{display:block;border:solid 2px #ead7ed;}
+#bnrs a:hover img{border-color:#fff;}
+#bnrs{
+	padding-bottom:2px;
+	}
+#bnrs div{
+	margin-bottom:5px;
+	}
+
+/*中央*/
+.relnavi{text-align:center;padding:3px 0 10px;font-family:futura,arial;}
+.paginate{text-align:center;padding:3px 0 10px;font-family:futura,arial;color:#e2437a;}
+
+
+#sheet h1{border:solid 3px #7e1083;background:url(datebg.gif)/*tpa=https://img.nogizaka46.com/blog/img/datebg.gif*/ 0 0 repeat-y;}
+#sheet h1 .date{
+	float:left;width:100px;background:#7e1083;
+	display:block;color:#fff;text-align:center;
+	padding:10px 0;font-family:futura,arial;
+	font-weight:normal;line-height:1;overflow:hidden;
+	}
+#sheet h1 .yearmonth{text-align:left;padding:0 10px;}
+#sheet h1 .yearmonth,
+#sheet h1 .daydate{display:block;}
+#sheet h1 .dd1{font-size:45px;}
+#sheet h1 .heading{
+	float:left;width:330px;color:#7e1083;
+	}
+#sheet h1 .author{display:block;border-bottom:dashed 1px #7e1083;padding:10px 0 5px;margin:0 8px;font-weight:normal;line-height:1;}
+#sheet h1 .entrytitle{display:block;padding:8px 0;margin:0 5px;font-size:120%;line-height:1.2;}
+#sheet .fkd{
+	background:url(entrytitlefkd.gif)/*tpa=https://img.nogizaka46.com/blog/img/entrytitlefkd.gif*/ 0 0 no-repeat;
+	width:12px;height:15px;margin-left:45px;
+	}
+.entrybody{line-height:2;padding:0 6px 20px;}
+.assetmorelink{
+	border-top:dashed 1px #7e1083;
+	text-align:center;
+	}
+.assetmorelink a{background:#f4e9f6;display:block;padding:0.5em 0;}
+.assetmorelink a:hover{background:#f7eef8;}
+.entrybottom{
+	border-top:dashed 1px #7e1083;padding:0.5em 0;
+	font-size:85%;text-align:center;margin-bottom:5em;
+	}
+#sheet h2{
+	}
+.archive-title,#comments h2{
+	font-family:futura,arial;font-weight:normal;
+	padding-top:10px;
+	color:#7e1083;font-size:200%;margin-bottom:20px;
+	border-bottom:solid 4px #bf87c1;
+	}
+.archive-title.kiji{text-align:center;color:#f496b7;}
+.archive-title.kiji span{color:#ffdfe2;}
+#sheet .archive-content{
+	margin-bottom:4em;
+	}
+#sheet .archive-content li{
+	background:url(li.gif)/*tpa=https://img.nogizaka46.com/blog/img/li.gif*/ 0 9px no-repeat;
+	padding:5px 0 2px 11px;
+	border-bottom:dashed 1px #7e1083;
+	}
+#sheet .archive-content li a{
+	color:#e2437a;
+	}
+#sheet .entrybody img{max-width:425px;}
+#sheet .entrybody img.image-embed{display:block;}
+
+#trackbacks{padding:8px 12px;color:#666;border:solid 1px #bf87c1;margin-bottom:20px;}
+trackbacks h2{color:#7e1083;}
+.comment .author{font-size:120%;font-weight:bold;}
+.comment-header{padding:1em 0 0;}
+.comment-content{color:#4b4f9b;border-bottom:dashed 1px #bf87c1;padding-bottom:1em;}
+.comment-content p{margin-bottom:1em;}
+#comment-nav,#top-comment-nav{
+	text-align:center;padding:1em 0;font-size:120%;
+	}
+#comment-nav li,#top-comment-nav li{
+	display:inline;
+	}
+#comments-open{margin-bottom:5em;}
+
+
+#blogroot a{
+	text-indent:-5000px;
+	display:block;
+	height:59px;
+	background:#ec658e url(blogroot.gif)/*tpa=https://img.nogizaka46.com/blog/img/blogroot.gif*/ 0 0 no-repeat;
+	}
+#staffblog #blogroot a{background:#7fbfe8 url(blogroot2.gif)/*tpa=https://img.nogizaka46.com/blog/img/blogroot2.gif*/ 0 0 no-repeat;}
+#blogroot a:hover,#staffblog #blogroot a:hover{background-position:-202px 0;}
+#rss{position:relative;}
+#rss a{
+	text-indent:-5000px;
+	position:absolute;
+	width:21px;height:21px;
+	background:url(rss.gif)/*tpa=https://img.nogizaka46.com/blog/img/rss.gif*/ 0 0 no-repeat;
+	top:-25px;right:0px;
+	}
+	#rss a:hover{filter:alpha(opacity=80);opacity:0.8;}
+
+.trackbacks-info p{font-size:90%;padding-top:5px;text-align:center;}
+
+
+#backsmph{
+	background:#333;padding:15px 0 18px;text-align:center;
+	box-shadow: inset 0 0 5px 0px #222;
+	}
+#backsmph a{
+	background:#000;
+	border-radius: 8px;
+	box-shadow: inset 1px 1px 2px 0px #000;
+	box-shadow: 0px 1px 0px 0px #4a484a;
+	color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 3px 12px;
+	text-align: center;
+	text-decoration: none;
+	width: 15em;
+	font-size:280%;
+	line-height:1.3;
+	font-family:futura;
+	}
+
+#comprepad{padding:15px 150px;}
